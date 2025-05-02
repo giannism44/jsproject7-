@@ -1,0 +1,31 @@
+const arr = []                  //Κενός πίνακας
+const arr1 = [1, 2, 3, 4, 5]    // and populate
+const arr2= [1, "Alice" , 3.4, true]
+const sparseArr = [1, ,3]       //Τα στοιχεία είναι λιγότερα απο το leght
+const arr3 = [,,,]              // length is 3, undefined
+const arr4 = Array(2)
+const grid = [[1, 2] , [2, 3], [5, 6 ,7]]
+const objArr = [{id: 1}, {id: 2}, {id: 3}]
+
+console.log(arr1[0])     // 1
+
+for(let i = 0; i< arr1.length; i++){
+  console.log(arr1[i])
+}
+
+// el είναι όνομα το ονομάζουμε όπως θέλουμε.
+for (const el of arr1){ 
+  console.log(el)
+}
+
+for(let i =0; i <grid.length; i++){
+  for(let j =0; j <grid[i].length; j++){
+    console.log(grid[i][j])
+  }
+}
+
+for(const row of grid){
+  for(const item of row){
+    console.log(item)
+  }
+}
